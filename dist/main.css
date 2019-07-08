@@ -1,133 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'alegreya-regular';
-  src: url("alegreyasans-black-webfont.woff2") format("woff2"), url("alegreyasans-black-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'alegreya-italic';
-  src: url("alegreyasans-blackitalic-webfont.woff2") format("woff2"), url("alegreyasans-blackitalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'alegreya_sansbold';
-  src: url("alegreyasans-bold-webfont.woff2") format("woff2"), url("alegreyasans-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'alegreya_sansbold_italic';
-  src: url("alegreyasans-bolditalic-webfont.woff2") format("woff2"), url("alegreyasans-bolditalic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'alegreya_sans_extraboldRg';
-  src: url("alegreyasans-extrabold-webfont.woff2") format("woff2"), url("alegreyasans-extrabold-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'alegreya_sans_extrabolditalic';
-  src: url("alegreyasans-extrabolditalic-webfont.woff2") format("woff2"), url("alegreyasans-extrabolditalic-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'alegreya_sansitalic';
-  src: url("alegreyasans-italic-webfont.woff2") format("woff2"), url("alegreyasans-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'alegreya_sans_lightregular';
-  src: url("alegreyasans-light-webfont.woff2") format("woff2"), url("alegreyasans-light-webfont.woff") format("woff");
-  font-weight: lighter;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'alegreya_sans_lightitalic';
-  src: url("alegreyasans-lightitalic-webfont.woff2") format("woff2"), url("alegreyasans-lightitalic-webfont.woff") format("woff");
-  font-weight: lighter;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'alegreya_sans_mediumregular';
-  src: url("alegreyasans-medium-webfont.woff2") format("woff2"), url("alegreyasans-medium-webfont.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'alegreya_sans_mediumitalic';
-  src: url("alegreyasans-mediumitalic-webfont.woff2") format("woff2"), url("alegreyasans-mediumitalic-webfont.woff") format("woff");
-  font-weight: 500;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'alegreya_sansregular';
-  src: url("alegreyasans-regular-webfont.woff2") format("woff2"), url("alegreyasans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-html,
-body {
-  height: 100%; }
-
-body {
-  background-color: #fff;
-  font-family: 'ubuntu', 'lifehack', 'gagalin', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  margin: 0px;
-  line-height: 1.42;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: rem(16px); }
-
-* {
-  box-sizing: border-box; }
-
-.wrapper {
-  height: 100%;
-  width: 100%; }
-
-.main {
-  height: 100%; }
-
-.container {
-  width: 1100px; }
-
-section {
-  width: 100%;
-  height: 100vh; }
-
-ul {
-  margin: 0;
-  padding: 0; }
-  ul > li {
-    list-style: none; }
-
-a {
-  text-decoration: none; }
-
-button {
-  border: none;
-  background: transparent;
-  cursor: pointer; }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: normal;
-  margin-top: 0; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -433,6 +304,136 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'alegreya-regular';
+  src: url("alegreyasans-black-webfont.woff2") format("woff2"), url("alegreyasans-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'alegreya-italic';
+  src: url("alegreyasans-blackitalic-webfont.woff2") format("woff2"), url("alegreyasans-blackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'alegreya_sansbold';
+  src: url("alegreyasans-bold-webfont.woff2") format("woff2"), url("alegreyasans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'alegreya_sansbold_italic';
+  src: url("alegreyasans-bolditalic-webfont.woff2") format("woff2"), url("alegreyasans-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'alegreya_sans_extraboldRg';
+  src: url("alegreyasans-extrabold-webfont.woff2") format("woff2"), url("alegreyasans-extrabold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'alegreya_sans_extrabolditalic';
+  src: url("alegreyasans-extrabolditalic-webfont.woff2") format("woff2"), url("alegreyasans-extrabolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'alegreya_sansitalic';
+  src: url("alegreyasans-italic-webfont.woff2") format("woff2"), url("alegreyasans-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'alegreya_sans_lightregular';
+  src: url("alegreyasans-light-webfont.woff2") format("woff2"), url("alegreyasans-light-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'alegreya_sans_lightitalic';
+  src: url("alegreyasans-lightitalic-webfont.woff2") format("woff2"), url("alegreyasans-lightitalic-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'alegreya_sans_mediumregular';
+  src: url("alegreyasans-medium-webfont.woff2") format("woff2"), url("alegreyasans-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'alegreya_sans_mediumitalic';
+  src: url("alegreyasans-mediumitalic-webfont.woff2") format("woff2"), url("alegreyasans-mediumitalic-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'alegreya_sansregular';
+  src: url("alegreyasans-regular-webfont.woff2") format("woff2"), url("alegreyasans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  background-color: #fff;
+  font-family: 'ubuntu', 'lifehack', 'gagalin', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: rem(16px); }
+
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  height: 100%;
+  width: 100%; }
+
+.main {
+  height: 100%; }
+
+.container {
+  width: 1100px;
+  margin: 0 auto; }
+
+.section {
+  width: 100%;
+  height: 100vh; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul > li {
+    list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  margin-top: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 /* цвета */
 /*breakpoints*/
 .first {
@@ -443,6 +444,20 @@ template {
   webkit-background-size: 100%;
   o-background-size: 100%; }
 
+.menu__contacts {
+  display: flex;
+  font-family: 'alegreya-regular';
+  font-size: 24px; }
+
+.menu__tel {
+  color: #fff; }
+
+.menu__logo {
+  font-size: 24px;
+  color: #fff;
+  font-family: 'alegreya_sansregular';
+  text-transform: uppercase; }
+
 .menu {
   display: flex;
   justify-content: space-between; }
@@ -452,7 +467,62 @@ template {
 
 .menu__list {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-family: 'alegreya-regular';
+  font-size: 18px; }
 
 .menu__items {
   margin-left: 20px; }
+
+.icon-car {
+  width: 76px;
+  height: 76px;
+  fill: #fff; }
+
+.icon-leaves {
+  width: 76px;
+  height: 76px;
+  fill: #fff; }
+
+.icon-sm {
+  width: 76px;
+  height: 76px;
+  fill: #fff; }
+
+.intro {
+  display: flex;
+  color: #fff; }
+
+.intro__left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center; }
+
+.intro__right {
+  margin: 0 auto; }
+
+.intro__desc {
+  font-family: 'alegreya-regular';
+  font-size: 21px;
+  color: #fff; }
+
+.intro__btn {
+  font-family: 'alegreya_sans_extraboldRg';
+  font-size: 19px;
+  color: #acbeb8; }
+
+.section-title {
+  color: #fff;
+  font-family: 'alegreya_sans_extraboldRg';
+  font-size: 60px;
+  text-transform: uppercase; }
+
+.why__list {
+  display: flex;
+  color: #fff;
+  font-family: 'alegreya-regular';
+  font-size: 16px; }
+
+.why__item {
+  display: flex; }
