@@ -13,6 +13,7 @@ task( "clean", () => {
     return src('src/*.html').pipe(dest('dist'))
 });
 
+
 task("styles", () => {
     return src("src/styles/main.scss")
     .pipe(sassGlob())
