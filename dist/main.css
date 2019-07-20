@@ -404,6 +404,12 @@ body {
   max-width: 1100px;
   margin: 0 auto; }
 
+.secondpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .section {
   width: 100%;
   height: 100vh; }
@@ -448,12 +454,29 @@ table {
 .bg-leavesfp {
   position: absolute;
   top: 50%;
-  left: 12%; }
+  left: 12%;
+  z-index: 5; }
 
 .bg-barryfp {
   position: absolute;
   top: 60%;
-  left: 55%; }
+  left: 55%;
+  z-index: 5; }
+
+.whychocco {
+  background: url("../img/bc/second.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  position: relative; }
+
+.bg-barrysp {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  z-index: 5; }
 
 .menu__contacts {
   display: flex;
@@ -467,7 +490,7 @@ table {
   color: #fff; }
 
 .menu__tel::before {
-  content: "\1F4DE";
+  content: url(./img/phone.png);
   font-size: 18px; }
 
 .menu__logo {
@@ -496,6 +519,45 @@ table {
   justify-content: space-around;
   font-family: 'alegreya-regular';
   font-size: 18px; }
+
+.advanteges__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3%;
+  text-align: center; }
+
+.advanteges__items {
+  max-width: 30%;
+  align-items: center;
+  align-content: center; }
+
+.advanteges__img {
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 8.75rem;
+  height: 8.75rem; }
+
+.advanteges__icon {
+  width: 4.6875rem;
+  height: 4.6875rem; }
+
+.advanteges__title {
+  font-family: 'alegreya_sansbold';
+  font-size: 1.6875rem;
+  color: #2f3234;
+  font-weight: bold; }
+
+.advanteges__desc {
+  font-family: 'alegreya_sans_lightregular';
+  font-size: 1.125rem;
+  color: #666666;
+  width: 90%;
+  margin: 0 auto; }
 
 .icon-car {
   width: 76px;
@@ -545,12 +607,47 @@ table {
   background-color: #fff;
   border-radius: 30px; }
 
+.round {
+  display: flex; }
+
+.round__small {
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  width: 0.625rem;
+  height: 0.625rem; }
+
+.round__big {
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0 0.3125rem; }
+
+.round__1 {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  display: flex;
+  align-items: center; }
+
+.round__2 {
+  position: absolute;
+  top: 50%;
+  left: 62%;
+  display: flex;
+  align-items: center; }
+
 .section-title {
   color: #fff;
   font-family: 'alegreya-regular';
-  font-size: 60px;
+  font-size: 3.75rem;
   text-transform: uppercase;
   margin: 0; }
+
+.black {
+  color: #2f3234;
+  margin-top: 10%;
+  font-size: 3.75rem; }
 
 .why {
   width: 55%; }
@@ -564,3 +661,8 @@ table {
 .why__item {
   display: flex;
   margin-bottom: 20px; }
+
+.whychocco__desc {
+  width: 40%;
+  color: #332f34;
+  text-align: center; }
