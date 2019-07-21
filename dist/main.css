@@ -449,99 +449,6 @@ table {
 
 /* цвета */
 /*breakpoints*/
-.first {
-  background: url("../img/bc/first.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-  -moz-background-size: 100%;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  position: relative; }
-
-.bg-leavesfp {
-  position: absolute;
-  top: 55%;
-  left: 5%;
-  z-index: 5; }
-
-.bg-barryfp {
-  position: absolute;
-  top: 60%;
-  left: 55%;
-  z-index: 5; }
-
-.whychocco {
-  background: url("../img/bc/second.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-  -moz-background-size: 100%;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  position: relative; }
-
-.bg-barrysp {
-  position: absolute;
-  top: 70%;
-  left: 0%;
-  z-index: 5; }
-
-.options {
-  background: url("../img/bc/third.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-  -moz-background-size: 100%;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  position: relative; }
-
-.bg-barryslider {
-  position: absolute;
-  top: 85%;
-  right: 0%;
-  z-index: 5; }
-
-.menu__contacts {
-  display: flex;
-  font-family: 'alegreya-regular';
-  font-size: 24px;
-  width: 15%;
-  margin-top: 20px;
-  margin-right: 80px; }
-
-.menu__tel {
-  color: #fff; }
-
-.menu__tel::before {
-  content: url(./img/phone.png);
-  font-size: 18px; }
-
-.menu__logo {
-  font-size: 24px;
-  color: #fff;
-  font-family: 'alegreya_sansregular';
-  text-transform: uppercase;
-  line-height: 1;
-  margin-top: 10px;
-  margin-left: 80px;
-  width: 8%; }
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  width: 100%; }
-
-.menu__block {
-  color: #fff;
-  margin-top: 20px;
-  width: 80%; }
-
-.menu__list {
-  display: flex;
-  justify-content: space-around;
-  font-family: 'alegreya-regular';
-  font-size: 18px; }
-
 .advanteges__list {
   display: flex;
   flex-wrap: wrap;
@@ -581,6 +488,74 @@ table {
   width: 90%;
   margin: 0 auto; }
 
+.first {
+  background: url("../img/bc/first.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  position: relative; }
+
+.bg-leavesfp {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  z-index: 5; }
+
+.bg-barryfp {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  z-index: 5; }
+
+.whychocco {
+  background: url("../img/bc/second.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  position: relative; }
+
+.bg-barrysp {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  z-index: 5; }
+
+.options {
+  background-color: #fff;
+  position: relative; }
+
+.bg-barryslider {
+  position: absolute;
+  top: 85%;
+  right: 0%;
+  z-index: 7; }
+
+.bg-leaveslider {
+  position: absolute;
+  top: 65%;
+  right: 0%;
+  z-index: 5; }
+
+.menu__contacts {
+  display: flex;
+  font-family: 'alegreya-regular';
+  font-size: 24px;
+  width: 15%;
+  margin-top: 20px;
+  margin-right: 80px; }
+
+.menu__tel {
+  color: #fff; }
+
+.menu__icon {
+  height: 40%;
+  margin-top: 0.625rem;
+  margin-right: 0.3125rem; }
+
 .icon-car {
   width: 56px;
   width: 56px; }
@@ -605,8 +580,7 @@ table {
   text-align: left;
   justify-content: center;
   width: 40%;
-  margin-left: 80px;
-  margin-bottom: 30px; }
+  margin-left: 80px; }
 
 .intro__right {
   margin: 0 auto; }
@@ -625,6 +599,33 @@ table {
   padding: 15px;
   background-color: #fff;
   border-radius: 30px; }
+
+.menu__logo {
+  font-size: 24px;
+  color: #fff;
+  font-family: 'alegreya_sansregular';
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 10px;
+  margin-left: 80px;
+  width: 8%; }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%; }
+
+.menu__block {
+  color: #fff;
+  margin-top: 20px;
+  width: 80%; }
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'alegreya-regular';
+  font-size: 18px; }
 
 .round {
   display: flex; }
@@ -756,6 +757,10 @@ table {
 .slider__weight {
   margin-left: 1.25rem; }
 
+.team {
+  display: flex;
+  justify-content: baseline; }
+
 .why {
   width: 55%; }
 
@@ -764,11 +769,15 @@ table {
   justify-content: flex-start;
   color: #fff;
   font-family: 'alegreya-regular';
-  font-size: 16px; }
+  font-size: 1rem;
+  margin-left: 5rem; }
 
 .why__item {
   display: flex;
-  margin-bottom: 20px; }
+  margin-left: 0.625rem; }
+
+.why__desc {
+  margin-left: 0.9375rem; }
 
 .whychocco__desc {
   width: 40%;
