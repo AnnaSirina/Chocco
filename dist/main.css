@@ -460,8 +460,8 @@ table {
 
 .bg-leavesfp {
   position: absolute;
-  top: 50%;
-  left: 12%;
+  top: 55%;
+  left: 5%;
   z-index: 5; }
 
 .bg-barryfp {
@@ -582,19 +582,16 @@ table {
   margin: 0 auto; }
 
 .icon-car {
-  width: 76px;
-  height: 76px;
-  fill: #fff; }
+  width: 56px;
+  width: 56px; }
 
 .icon-leaves {
-  width: 66px;
-  height: 66px;
-  fill: #fff; }
+  width: 56px;
+  width: 56px; }
 
 .icon-sm {
-  width: 76px;
-  height: 76px;
-  fill: #fff; }
+  width: 56px;
+  width: 56px; }
 
 .intro {
   display: flex;
@@ -764,6 +761,7 @@ table {
 
 .why__list {
   display: flex;
+  justify-content: flex-start;
   color: #fff;
   font-family: 'alegreya-regular';
   font-size: 16px; }
