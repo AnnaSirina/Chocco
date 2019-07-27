@@ -449,6 +449,29 @@ table {
 
 /* цвета */
 /*breakpoints*/
+.accordeon-menu__list {
+  display: flex; }
+
+.accordeon-menu__item {
+  display: flex;
+  background-color: rgba(71, 74, 81, 0.8); }
+
+.accordeon-menu__desc {
+  font-size: 18px;
+  color: white;
+  padding: 15px; }
+
+.accordeon-menu__title {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  padding: 15px; }
+
+.accordeon-menu__desc-hidden {
+  display: none; }
+
 .advanteges__list {
   display: flex;
   flex-wrap: wrap;
@@ -540,6 +563,75 @@ table {
   right: 0%;
   z-index: 5; }
 
+.accordeon-menu {
+  background: url("../img/bc/fouth.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.review {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center; }
+
+.bg-berries-rewier {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.bg-leaves-rewier {
+  position: absolute;
+  top: 85%;
+  left: 0; }
+
+.bg-barriesblack-rewier {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  z-index: 5; }
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.bg-leaves-work {
+  position: absolute;
+  top: 25%;
+  right: 25%;
+  transform: rotate(90deg);
+  z-index: -1; }
+
+.bg-leaves-work2 {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  transform: rotate(90deg);
+  z-index: -1; }
+
+.review__list {
+  background: url("../img/leaves6.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  margin-bottom: 30px; }
+
+.section-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
 .menu__contacts {
   display: flex;
   font-family: 'alegreya-regular';
@@ -627,6 +719,38 @@ table {
   font-family: 'alegreya-regular';
   font-size: 18px; }
 
+.review__item {
+  display: flex;
+  justify-content: space-between; }
+
+.review__item-hidden {
+  display: none; }
+
+.review__roundList {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: 0 auto; }
+
+.review__roundItem {
+  border-radius: 50%;
+  background: url("../img/mila.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px; }
+
+.review__desc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+  margin-left: 15px; }
+
+.review__title {
+  font-size: 20px;
+  color: grey; }
+
 .round {
   display: flex; }
 
@@ -668,6 +792,17 @@ table {
   color: #2f3234;
   margin-top: 10%;
   font-size: 3.75rem; }
+
+.review-black {
+  text-align: center;
+  color: black;
+  margin-bottom: 25px; }
+
+.black-team {
+  margin-bottom: 7%;
+  color: #2f3234;
+  font-size: 3.75rem;
+  font-weight: bold; }
 
 .slider__next::before {
   content: "\203a";
@@ -759,7 +894,30 @@ table {
 
 .team {
   display: flex;
-  justify-content: baseline; }
+  justify-content: space-between; }
+
+.team__item {
+  width: 23%;
+  padding: 5px; }
+
+.low {
+  margin-top: 5%; }
+
+.team__title {
+  font-size: 16px;
+  font-weight: bold;
+  color: grey; }
+
+.team__title::before {
+  content: '\25BC';
+  color: grey; }
+
+.team__desc {
+  font-size: 16px;
+  font-color: grey; }
+
+.team__desc-hidden {
+  display: none; }
 
 .why {
   width: 55%; }
@@ -783,3 +941,8 @@ table {
   width: 40%;
   color: #332f34;
   text-align: center; }
+
+.work__pleyer {
+  width: 600px;
+  height: 400px;
+  background-color: grey; }
