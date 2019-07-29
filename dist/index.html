@@ -91,6 +91,11 @@
                     используем только природные ингредиенты.
                   </div>
                 </li>
+                <li class="round">
+                <div class="round__small"></div>
+                <div class="round__big"></div>
+                <div class="round__small"></div>
+              </li>
                 <li class="advanteges__items">
                   <div class="advanteges__img">
                     <img
@@ -105,6 +110,11 @@
                     вкусовые качества наших батончиков.
                   </div>
                 </li>
+                <li class="round">
+                <div class="round__small"></div>
+                <div class="round__big"></div>
+                <div class="round__small"></div>
+              </li>
                 <li class="advanteges__items">
                   <div class="advanteges__img">
                     <img
@@ -122,18 +132,7 @@
               </ul>
             </div>
             <img class="bg-barrysp" src="../img/barry2.png" alt="" />
-            <ul class="round">
-              <li class="round__1">
-                <div class="round__small"></div>
-                <div class="round__big"></div>
-                <div class="round__small"></div>
-              </li>
-              <li class="round__2">
-                <div class="round__small"></div>
-                <div class="round__big"></div>
-                <div class="round__small"></div>
-              </li>
-            </ul>
+            
           </div>
         </section>
         <section class="section options">
@@ -238,7 +237,7 @@
             <ul class="review__list">
               <li class="review__item">
                 <div class="review__img">
-                  <img src="../img/mila.jpg" class="review__avatar"/>
+                  <img src="../img/alena.jpg" class="review__avatar"/>
                 </div>
                 <div class="review__desc">
                   <h3 class="review__title">Лучший перекус</h3>
@@ -285,19 +284,19 @@
             </ul>
             <div class="review__round">
               <ul class="review__roundList">
-                <li class="review__roundItem">
+                <li class="review__roundItem customer1">
                  
                 </li>
-                <li class="review__roundItem">
+                <li class="review__roundItem customer2">
                   
                 </li>
-                <li class="review__roundItem">
+                <li class="review__roundItem customer3">
                   
                 </li>
               </ul>
             </div>
           </div>
-          <img class="bg-berries-rewier" src="../img/barries7.png" alt="" />
+          <img class="bg-berries-rewier" src="../img/barries8.png" alt="" />
            <img class="bg-leaves-rewier" src="../img/leaves7.png" alt="" />
            <img class="bg-barriesblack-rewier" src="../img/barries7.png" alt="" />
         </section>
@@ -312,13 +311,118 @@
         </section>
 
         <section class="section order">
-          <div class="container">
+          <div class="container container-order">
             <h2 class="section-title title-green">Закажите доставку</h2>
-            <form class="order-form">
-              
-              <input class="order-form__input" type="text">
-            </form>
+           <form class="order" id ="myForm">
+
+          <div class="order__col1">
+            <div class="order__contact">
+              <div class="order__name">
+                <label class="order__label" for="name"><span class="order__label-name">Имя</span>
+                  <input type="text" class="order__input order__input-name" id="name" placeholder="Введите имя" required></label>
+                  <div class="order__error"></div>
+              </div>
+              <div class="order__tel">
+                <label class="order__label" for="tel"><span class="order__label-tel">Телефон</span>
+                  <input type="tel" class="order__input" id="tel" placeholder="+7 (XXX) XXX-XX-XX" required></label>
+                  <div class="order__error"></div>
+              </div>
+            </div>
+            <div class="order__street">
+              <label class="order__label" for="street"><span class="order__label-title">Улица</span>
+                <input type="text" class="order__input" id="street" placeholder="ул.Ленина"></label>
+            </div>
+            <div class="order__numbers">
+              <ul class="order__list">
+                <li class="order__item">
+                  <label class="order__label" for="house"><span class="order__label-title">Дом</span>
+                    <input type="text" class="order__input" id="house" placeholder="1"></label>
+                </li>
+                <li class="order__item">
+                  <label class="order__label" for="building"><span class="order__label-title">Корпус</span>
+                    <input type="text" class="order__input" id="building" placeholder="1"></label>
+                </li>
+                <li class="order__item">
+                  <label class="order__label" for="flat"><span class="order__label-title">Квартира</span>
+                    <input type="text" class="order__input" id="flat" placeholder="1"></label>
+                </li>
+                <li class="order__item">
+                  <label class="order__label" for="floor"><span class="order__label-title">Этаж</span>
+                    <input type="text" class="order__input" id="floor" placeholder="1"></label>
+                </li>
+
+              </ul>
+
+
+            </div>
           </div>
+
+          <div class="order__col2">
+
+            <div class="order__comment">
+              <label class="order__label">
+                <span class="order__label-title">Комментарий:</span>
+                <textarea class="order__input order__input-textarea" name="comment" placeholder="Нарисуйте на коробке кота" required></textarea>
+              </label>
+              <div class="order__error"></div>
+            </div>
+            <div class="order__pay">
+              <label class="order__radio-lbl" tabindex="0">
+                <input class="order__radio" value="cash" type="radio" name="check" checked>
+                <span class="order__radio-custom"> </span>
+                <span class="order__radio-text">Потребуется сдача</span>
+              </label>
+              <label class="order__radio-lbl" tabindex="0">
+                <input class="order__radio" value="card" type="radio" name="check" tabindex="0">
+                <span class="order__radio-custom"></span>
+                <span class="order__radio-text">Оплата по карте</span>
+              </label>
+            </div>
+            <div class="order__callback">
+              <label class="order__check-lbl" for="call">
+                <input class="order__check" id="call" name="call" type="checkbox" value="checked" />
+                <span class="order__check-custom"></span>
+                <span class="order__check-text" name="callback">Не перезванивать</span>
+              </label>
+
+
+            </div>
+            <div class="order__button">
+              <button class="order__btn-submit" id="SendButton" type="submit">Заказать</button>
+              <button class="order__btn-reset" type="reset">Очистить</button>
+            </div>
+          </div>
+        </form>
+          </div>
+           <img class="bg-barriesoreder" src="../img/barry3.png" alt="" />
+        </section>
+
+        <section class="section section-map">
+          <footer class="footer">
+            <div class="footer__contact">
+              <div class="footer__adres">Москва, ул.Новый Арбат, д.31/12</div>
+               <div class="menu__contacts">
+                <img src="../img/phone.png" alt="" class="menu__icon" />
+                <a href="+78009039090" class="menu__tel">88009039090</a>
+              </div>
+            </div>
+            <div class="footer__socials">
+              <ul class="footer__list">
+                <li class="footer__items">
+                  <img src="../img/icons/vk.png" class="footer__img"></img>
+                </li>
+                <li class="footer__items">
+                  <img src="../img/icons/fb.png" class="footer__img"></img>
+                </li>
+                <li class="footer__items">
+                  <img src="../img/icons/inst.png" class="footer__img"></img>
+                </li>
+                <li class="footer__items">
+                  <img src="../img/icons/twitter.png" class="footer__img"></img>
+                </li>
+              </ul>
+            </div>
+          </footer>
         </section>
       </div>
     </div>
