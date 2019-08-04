@@ -392,6 +392,8 @@ body, .onepage-wrapper, html {
 body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   position: inherit; }
 
+/* цвета */
+/*breakpoints*/
 @font-face {
   font-family: 'alegreya-regular';
   src: url("alegreyasans-black-webfont.woff2") format("woff2"), url("alegreyasans-black-webfont.woff") format("woff");
@@ -464,13 +466,13 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   font-weight: normal;
   font-style: normal; }
 
-html {
-  /* @include phones {
-        font-size: rem(13px);
-    }*/ }
-  @media screen and (max-width: 768px) {
-    html {
-      font-size: rem(15px); } }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 0.9375rem; } }
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 0.8125rem; } }
 
 html,
 body {
@@ -484,7 +486,7 @@ body {
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: rem(16px); }
+  font-size: 1rem; }
 
 * {
   box-sizing: border-box; }
@@ -496,7 +498,7 @@ body {
   overflow: hidden; }
 
 .container {
-  max-width: rem(1100px);
+  max-width: 68.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -521,7 +523,7 @@ body {
   align-items: center; }
   @media screen and (max-width: 768px) {
     .container-slider {
-      padding: rem(15px); } }
+      padding: 0.9375rem; } }
 
 .container-order {
   justify-content: center; }
@@ -564,8 +566,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* цвета */
-/*breakpoints*/
 .accordeon-menu__list {
   display: flex;
   position: absolute;
@@ -664,7 +664,7 @@ table {
   margin: 0 auto; }
   @media screen and (max-width: 768px) {
     .advanteges__desc {
-      width: 100%; } }
+      width: 60%; } }
   @media screen and (max-width: 480px) {
     .advanteges__desc {
       font-size: 1rem;
@@ -684,7 +684,7 @@ table {
   position: absolute;
   top: 37%;
   right: 22%;
-  z-index: 5; }
+  z-index: 3; }
   @media screen and (max-width: 768px) {
     .bg-leavesfp {
       top: 25%;
@@ -770,6 +770,9 @@ table {
   position: absolute;
   top: 0;
   right: 0; }
+  @media screen and (max-width: 480px) {
+    .bg-berries-rewier {
+      width: 27%; } }
 
 .bg-leaves-rewier {
   position: absolute;
@@ -781,6 +784,9 @@ table {
   top: 90%;
   left: 0;
   z-index: 5; }
+  @media screen and (max-width: 480px) {
+    .bg-barriesblack-rewier {
+      width: 27%; } }
 
 .work {
   display: flex;
@@ -808,6 +814,9 @@ table {
   top: 88%;
   right: 0%;
   z-index: 3; }
+  @media screen and (max-width: 480px) {
+    .bg-barries-work {
+      width: 25%; } }
 
 .section-team {
   display: flex;
@@ -881,30 +890,64 @@ table {
   width: 100%;
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 480px) {
+    .footer__data {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.625rem; } }
 
 .footer__list {
   display: flex; }
 
 .footer__items {
-  margin-right: 1.25rem; }
+  margin-right: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: relative;
+  transition: 0.3s; }
+
+.footer__items:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/icons/icons_sprite.png");
+  width: 20px;
+  height: 20px;
+  background-position: -5px -5px; }
+
+.footer__items:nth-child(2):after {
+  background-position: -35px -5px; }
+
+.footer__items:nth-child(3):after {
+  background-position: -5px -35px; }
+
+.footer__items:nth-child(4):after {
+  background-position: -35px -35px; }
 
 .footer__items:hover {
-  filter: brightness(40%);
-  transition: 1s; }
+  drop-shadow: 16px 16px 10px black; }
 
 .footer__adres {
   font-size: 1.125rem; }
+  @media screen and (max-width: 480px) {
+    .footer__adres {
+      margin-bottom: 0.9375rem; } }
 
 .footer__contacts {
-  color: #0f5a47;
-  margin: 0; }
+  margin: 0;
+  display: flex; }
+  @media screen and (max-width: 480px) {
+    .footer__contacts {
+      justify-content: center; } }
 
-.footer__icon {
+.footer__tel {
   color: #0f5a47; }
-
-.footer__contacts {
-  display: flex;
-  justify-content: space-between; }
+  @media screen and (max-width: 480px) {
+    .footer__tel {
+      margin-bottom: 0.9375rem; } }
 
 .order {
   display: flex;
@@ -919,7 +962,7 @@ table {
   @media screen and (max-width: 480px) {
     .order {
       width: 100%;
-      padding: 5%;
+      padding: 3%;
       margin-top: 0.625rem; } }
 
 .order__col1,
@@ -1172,7 +1215,11 @@ table {
   width: 35%;
   padding: 0.9375rem;
   background-color: #fff;
-  border-radius: 1.875rem; }
+  border-radius: 1.875rem;
+  z-index: 10; }
+  .intro__btnhover {
+    color: #0f5a47;
+    font-weight: bold; }
   @media screen and (max-width: 768px) {
     .intro__btn {
       width: 25%;
@@ -1180,6 +1227,10 @@ table {
       margin: 0 auto 1.25rem auto;
       color: #0f5a47;
       font-weight: bold; } }
+
+.intro__btn:hover {
+  color: #0f5a47;
+  font-weigth: bold; }
 
 @media screen and (max-width: 480px) {
   .intro__img {
@@ -1259,6 +1310,12 @@ table {
     .review__list {
       background-position: 94%;
       max-width: 70%; } }
+  @media screen and (max-width: 480px) {
+    .review__list {
+      background-position: 94%;
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 0.625rem; } }
 
 .review__item {
   display: flex;
@@ -1288,6 +1345,10 @@ table {
   min-width: 9.375rem;
   min-height: 9.375rem;
   margin: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .review__roundItem {
+      min-width: 6.25rem;
+      min-height: 6.25rem; } }
 
 .customer1 {
   background: url("../img/alena.jpg");
@@ -1319,6 +1380,14 @@ table {
 @media screen and (max-width: 768px) {
   .review__name {
     margin-top: 1.25rem; } }
+
+@media screen and (max-width: 480px) {
+  .review__avatar {
+    width: 50%; } }
+
+@media screen and (max-width: 480px) {
+  .review__about {
+    padding: 0 0.9375rem; } }
 
 .round {
   display: flex;
@@ -1370,7 +1439,7 @@ table {
   margin-bottom: 1.5625rem; }
   @media screen and (max-width: 480px) {
     .review-black {
-      font-size: 2rem;
+      font-size: 2.25rem;
       z-index: 7; } }
 
 .black-team {
@@ -1390,6 +1459,9 @@ table {
     .title-green {
       font-size: 3.125rem;
       font-weight: bold; } }
+  @media screen and (max-width: 480px) {
+    .title-green {
+      font-size: 2rem; } }
 
 .menu-acc {
   margin: 3.125rem; }
@@ -1614,3 +1686,7 @@ table {
   width: 37.5rem;
   height: 25rem;
   background-color: grey; }
+  @media screen and (max-width: 480px) {
+    .work__pleyer {
+      width: 31.25rem;
+      height: 15.625rem; } }
