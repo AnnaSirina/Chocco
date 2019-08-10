@@ -16,15 +16,15 @@
     z-index: 3;
 
     @include tablets {
-     top: 25%;
-    right: 8%;
-    width: 55%;
+        top: 25%;
+        right: 8%;
+        width: 55%;
     }
 
     @include phones {
-    top: 29%;
-    right: 13%;
-    width: 84%;
+        top: 29%;
+        right: 13%;
+        width: 84%;
     }
 }
 
@@ -35,13 +35,14 @@
     z-index: 5;
 
     @include tablets {
-     top: 30%;
-     left: 25%;
+        top: 30%;
+        left: 25%;
     }
-     @include phones {
-    top: 24%;
-    left: 23%;
-    width: 62%;
+
+    @include phones {
+        top: 22%;
+        left: 28%;
+        width: 50%;
     }
 }
 
@@ -61,8 +62,8 @@
     left: 0%;
     z-index: 5;
 
-     @include phones {
-       width: 33%;
+    @include phones {
+        width: 33%;
     }
 }
 
@@ -78,7 +79,7 @@
     z-index: 7;
 
     @include phones {
-    width: 26%;
+        width: 26%;
     }
 }
 
@@ -116,7 +117,7 @@
     right: 0;
 
     @include phones {
-    width: 27%;
+        width: 27%;
     }
 }
 
@@ -131,6 +132,7 @@
     top: 90%;
     left: 0;
     z-index: 5;
+
     @include phones {
         width: 27%;
     }
@@ -165,10 +167,12 @@
     top: 88%;
     right: 0%;
     z-index: 3;
+
     @include phones {
-    width: 25%;
+        width: 25%;
     }
 }
+
 .section-team {
     display: flex;
     align-items: center;
@@ -180,12 +184,12 @@
 
 .bg-berries-team {
     position: absolute;
-   top: 93%;
+    top: 93%;
     left: 3%;
     z-index: 3;
 
     @include phones {
-    width: 19%;
+        width: 19%;
     }
 }
 
@@ -204,7 +208,7 @@
     z-index: 3;
 
     @include tablets {
-    display: none;
+        display: none;
     }
 }
 

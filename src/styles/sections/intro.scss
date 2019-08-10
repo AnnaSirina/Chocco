@@ -5,7 +5,7 @@
     line-height: 1;
 
     @include tablets {
-    flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 }
 
@@ -28,9 +28,9 @@
     margin: 0 auto;
 
     @include phones {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -42,9 +42,9 @@
 
 
     @include tablets {
-    width: 60%;
-    margin: rem(20px) auto;
-    font-size: rem(24px);
+        width: 60%;
+        margin: rem(20px) auto;
+        font-size: rem(20px);
     }
 }
 
@@ -59,30 +59,28 @@
     z-index: 10;
 
     &hover {
-    color: $green;
-    font-weight: bold;
+        color: $green;
+        font-weight: bold;
     }
 
-     @include tablets {
-    width: 25%;
-    padding: rem(20px) rem(15px);
-    margin: 0 auto rem(20px) auto;
-    color: $green;
-    font-weight: bold;
+    @include tablets {
+        width: 25%;
+        padding: rem(15px) rem(10px);
+        margin: 0 auto rem(15px) auto;
+        color: $green;
+        font-weight: bold;
     }
 }
 
 .intro__btn:hover {
     color: $green;
-    font-weigth: bold;
+    font-weight: bold;
 }
 
 .intro__img {
     @include phones {
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
 }
-}
-
-

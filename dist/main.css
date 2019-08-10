@@ -707,9 +707,9 @@ table {
       left: 25%; } }
   @media screen and (max-width: 480px) {
     .bg-barryfp {
-      top: 24%;
-      left: 23%;
-      width: 62%; } }
+      top: 22%;
+      left: 28%;
+      width: 50%; } }
 
 .whychocco {
   background: url("../img/bc/second.jpg") no-repeat;
@@ -1206,7 +1206,7 @@ table {
     .intro__desc {
       width: 60%;
       margin: 1.25rem auto;
-      font-size: 1.5rem; } }
+      font-size: 1.25rem; } }
 
 .intro__btn {
   font-family: 'alegreya_sans_extraboldRg';
@@ -1223,18 +1223,18 @@ table {
   @media screen and (max-width: 768px) {
     .intro__btn {
       width: 25%;
-      padding: 1.25rem 0.9375rem;
-      margin: 0 auto 1.25rem auto;
+      padding: 0.9375rem 0.625rem;
+      margin: 0 auto 0.9375rem auto;
       color: #0f5a47;
       font-weight: bold; } }
 
 .intro__btn:hover {
   color: #0f5a47;
-  font-weigth: bold; }
+  font-weight: bold; }
 
 @media screen and (max-width: 480px) {
   .intro__img {
-    width: 70%;
+    width: 60%;
     height: auto;
     margin: 0 auto; } }
 
@@ -1417,8 +1417,10 @@ table {
   margin: 0; }
   @media screen and (max-width: 480px) {
     .section-title {
-      font-size: 2.375rem;
-      font-weight: bold; } }
+      font-size: 1.625rem;
+      font-weight: bold;
+      width: 75%;
+      margin: 0 auto; } }
 
 .black {
   color: #2f3234;
