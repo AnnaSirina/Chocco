@@ -1,0 +1,9 @@
+.whychocco__desc {
+    width: 40%;
+    color: $grey;
+    text-align: center;
+
+    @include tablets {
+    	width: 60%;
+    }
+}

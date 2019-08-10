@@ -1,0 +1,10 @@
+.work__pleyer {
+	width: rem(600px);
+	height: rem(400px);
+	background-color: grey;
+
+	@include phones {
+	width: rem(500px);
+	height: rem(250px);
+	}
+}

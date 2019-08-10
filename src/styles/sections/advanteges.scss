@@ -1,0 +1,84 @@
+.advanteges__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3%;
+    text-align: center;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+.advanteges__items {
+    max-width: 30%;
+    align-items: center;
+    align-content: center;
+
+    @include tablets {
+        max-width: 100%;
+        margin-bottom: rem(20px);
+    }
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
+
+}
+
+.advanteges__img {
+    background-color: $grey-l;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: rem(140px);
+    height: rem(140px);
+
+    @include phones {
+        width: rem(100px);
+        height: rem(100px);
+    }
+}
+
+.advanteges__icon {
+    width: rem(75px);
+    height: rem(75px);
+}
+
+.advanteges__title {
+    font-family: 'alegreya_sansbold';
+    font-size: rem(27px);
+    color: $black;
+    font-weight: bold;
+
+    @include tablets {
+        font-size: rem(24px);
+        margin-bottom: rem(10px);
+    }
+
+    @include phones {
+        font-size: rem(18px);
+    }
+}
+
+.advanteges__desc {
+    font-family: 'alegreya_sans_lightregular';
+    font-size: rem(18px);
+    color: $text-grey;
+    width: 90%;
+    margin: 0 auto;
+
+    @include tablets {
+        width: 60%;
+    }
+
+    @include phones {
+        font-size: rem(16px);
+        width: 65%;
+    }
+}

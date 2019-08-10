@@ -1,0 +1,14 @@
+.menu__logo {
+    font-size: rem(24px);
+    color: $white;
+    font-family: 'alegreya_sansregular'; 
+    text-transform: uppercase; 
+    line-height: 1;
+    margin-top: rem(10px);
+    margin-left: rem(80px);
+    width: 8%;
+
+    @include tablets {
+		font-size: rem(32px);
+    }
+}

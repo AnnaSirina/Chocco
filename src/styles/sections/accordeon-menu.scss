@@ -1,0 +1,40 @@
+
+.accordeon-menu__list {
+	display: flex;
+	position: absolute;
+	display: flex;
+	height: 100%;
+	margin: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 0;
+
+}
+.accordeon-menu__item {
+	display: flex;
+	display: inherit;
+	 width: rem(70px);
+	 padding: 0;
+	 margin: 0;
+	 background: rgba(#2f3234, .5);
+}
+
+.accordeon-menu__desc {
+	font-size: rem(18px);
+	color: white;
+	padding: rem(15px);
+}
+
+.accordeon-menu__title {
+	font-size: rem(40px);
+	color: white;
+	font-weight: bold;
+	writing-mode: tb-rl;
+	transform: rotate(180deg);
+	padding: rem(15px);
+}
+
+.accordeon-menu__desc-hidden {
+	display: none;
+}

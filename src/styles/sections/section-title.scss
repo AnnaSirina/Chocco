@@ -1,0 +1,67 @@
+.section-title {
+    color: $white;
+    font-family: 'alegreya-regular';
+    font-size: rem(60px);
+    text-transform: uppercase;
+    margin: 0;
+
+    @include phones {
+    font-size: rem(38px);
+    font-weight: bold;
+    }
+}
+
+.black {
+    color: $black;
+    margin-top: 10%;
+    font-size: rem(60px);
+
+    @include tablets {
+    margin-top: 5%;
+    font-size: rem(52px);
+    }
+
+    @include phones {
+    margin-top: 1%;
+    font-size: rem(36px);
+    }
+}
+
+.review-black {
+    text-align: center;
+    color: black;
+    margin-bottom: rem(25px);
+
+    @include phones {
+    font-size: rem(36px);
+    z-index: 7;
+    }
+}
+
+.black-team {
+    margin-bottom: 7%;
+    color: #2f3234;
+    font-size: 3.75rem;
+    font-weight: bold;
+
+    @include phones {
+    font-size: rem(32px);
+    z-index: 7;
+    }
+}
+
+.title-green {
+    color: $green;
+    text-align: center;
+
+    @include tablets {
+    font-size: rem(50px);
+    font-weight: bold;
+    }
+     @include phones {
+    font-size: rem(32px);}
+}
+
+.menu-acc {
+    margin: rem(50px);
+}

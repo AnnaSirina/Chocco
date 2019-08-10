@@ -1,0 +1,30 @@
+.why {
+    width: 55%;
+
+    @include tablets {
+    margin: 0 auto;
+    }
+}
+
+.why__list {
+    display: flex;
+    justify-content: flex-start;
+    color: $white;
+    font-family: 'alegreya-regular';
+    font-size: rem(16px);
+    margin-left: rem(80px);
+
+    @include tablets {
+    justify-content: center;
+    margin-left: 0;
+    }
+}
+
+.why__item {
+    display: flex;
+    margin-left: rem(10px);
+}
+
+.why__desc {
+    margin-left: rem(15px);
+}

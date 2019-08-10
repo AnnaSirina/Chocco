@@ -1,0 +1,29 @@
+.menu__contacts {
+    display: flex;
+    font-family: 'alegreya-regular';
+    font-size: rem(24px);
+    width: 15%;
+    margin-top: rem(20px);
+    margin-right: rem(80px);
+
+    @include tablets {
+    margin-right: 0
+    }
+}
+
+.menu__tel {
+    color: $white;
+
+     @include tablets {
+    display: none;
+    }
+}
+
+.menu__icon {
+    height: 40%;
+    margin-top: rem(10px);
+    margin-right: rem(5px);
+     @include tablets {
+    display: none;
+    }
+}

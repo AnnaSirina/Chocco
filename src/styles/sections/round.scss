@@ -1,0 +1,24 @@
+.round {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+    display: none;
+    }
+}
+
+.round__small {
+    background-color: $grey-l;
+    border-radius: 50%;
+    width: rem(10px);
+    height: rem(10px);
+}
+
+.round__big {
+    background-color: $grey-l;
+    border-radius: 50%;
+    width: rem(18px);
+    height: rem(18px);
+    margin: 0 rem(5px);
+}
+

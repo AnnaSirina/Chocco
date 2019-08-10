@@ -1,0 +1,213 @@
+.first {
+    background: url('../img/bc/first.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    position: relative;
+    display: block;
+}
+
+.bg-leavesfp {
+    position: absolute;
+    top: 37%;
+    right: 22%;
+    z-index: 3;
+
+    @include tablets {
+     top: 25%;
+    right: 8%;
+    width: 55%;
+    }
+
+    @include phones {
+    top: 29%;
+    right: 13%;
+    width: 84%;
+    }
+}
+
+.bg-barryfp {
+    position: absolute;
+    top: 43%;
+    left: 55%;
+    z-index: 5;
+
+    @include tablets {
+     top: 30%;
+     left: 25%;
+    }
+     @include phones {
+    top: 24%;
+    left: 23%;
+    width: 62%;
+    }
+}
+
+.whychocco {
+    background: url('../img/bc/second.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    position: relative;
+}
+
+.bg-barrysp {
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    z-index: 5;
+
+     @include phones {
+       width: 33%;
+    }
+}
+
+.options {
+    background-color: $grey-l;
+    position: relative;
+}
+
+.bg-barryslider {
+    position: absolute;
+    top: 95%;
+    right: 0%;
+    z-index: 7;
+
+    @include phones {
+    width: 26%;
+    }
+}
+
+.bg-leaveslider {
+    position: absolute;
+    top: 65%;
+    right: 0%;
+    z-index: 5;
+}
+
+.accordeon-menu {
+    background: url("../img/bc/fouth.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.review {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.bg-berries-rewier {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include phones {
+    width: 27%;
+    }
+}
+
+.bg-leaves-rewier {
+    position: absolute;
+    top: 85%;
+    left: 0;
+}
+
+.bg-barriesblack-rewier {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    z-index: 5;
+    @include phones {
+        width: 27%;
+    }
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bg-leaves-work {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    transform: rotate(90deg);
+    z-index: -1;
+}
+
+.bg-leaves-work2 {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    transform: rotate(90deg);
+    z-index: -1;
+}
+
+.bg-barries-work {
+    position: absolute;
+    top: 88%;
+    right: 0%;
+    z-index: 3;
+    @include phones {
+    width: 25%;
+    }
+}
+.section-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.bg-berries-team {
+    position: absolute;
+   top: 93%;
+    left: 3%;
+    z-index: 3;
+
+    @include phones {
+    width: 19%;
+    }
+}
+
+.section-order {
+    background: url('../img/bc/order.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-barriesoreder {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    z-index: 3;
+
+    @include tablets {
+    display: none;
+    }
+}
+
+.section-map {
+    position: relative;
+}

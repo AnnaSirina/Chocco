@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+
+.menu__block {
+    color: $white;
+    margin-top: rem(20px);
+    width: 80%;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'alegreya-regular';
+    font-size: rem(18px);
+}

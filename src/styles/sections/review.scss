@@ -1,0 +1,116 @@
+
+
+.review__list {
+    background: url('../img/leaves6.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: rem(50px);
+    margin-bottom: rem(30px);
+
+    @include tablets {
+    background-position: 94%; 
+    max-width: 70%;
+    }
+
+    @include phones {
+    background-position: 94%; 
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: rem(10px);
+    }
+}
+
+
+.review__item {
+	display: flex;
+	justify-content: space-between;
+
+	@include tablets {
+	flex-direction: column;
+	text-align: center;
+
+	}
+}
+
+.review__item-hidden {
+	display: none;
+}
+.review__round {
+	@include tablets {
+	display: flex;
+	justify-content: center;
+	}
+}
+.review__roundList {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.review__roundItem {
+	border-radius: 50%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-width: rem(150px);
+	min-height: rem(150px);
+	margin: rem(10px);
+
+	@include phones {
+	min-width: rem(100px);
+	min-height: rem(100px);
+	}
+}
+
+.customer1 {
+	background: url("../img/alena.jpg");
+	background-size: contain;
+
+}
+
+.customer2 {
+	background: url("../img/karina.jpg");
+	background-size: contain;	
+}
+
+.customer3 {
+	background: url("../img/irina.jpg");
+	background-size: contain;
+}
+
+.review__desc {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: space-around;
+	margin-left: rem(15px);
+
+	@include tablets { 
+	text-align: center;
+	margin-left: 0;
+	}
+}
+
+.review__title,  {
+	font-size: rem(20px);
+	color: grey;
+}
+
+.review__name {
+	@include tablets {
+	margin-top: rem(20px);
+	}
+}
+
+
+.review__avatar {
+	@include phones {
+	width: 50%;
+	}
+}
+
+.review__about {
+	@include phones {
+	padding: 0 rem(15px);
+	}
+}
