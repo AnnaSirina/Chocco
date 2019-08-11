@@ -2,8 +2,13 @@
     width: 55%;
 
     @include tablets {
-    margin: 0 auto;
+        margin: 0 auto;
     }
+
+    @include phones {
+        width: 95%;
+    }
+
 }
 
 .why__list {
@@ -15,8 +20,14 @@
     margin-left: rem(80px);
 
     @include tablets {
-    justify-content: center;
-    margin-left: 0;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    @include phones {
+        font-size: rem(14px);
+        line-height: 1;
+
     }
 }
 

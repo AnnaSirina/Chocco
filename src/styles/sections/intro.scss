@@ -46,6 +46,12 @@
         margin: rem(20px) auto;
         font-size: rem(20px);
     }
+
+    @include phones {
+        width: 75%;
+        margin: rem(15px) auto;
+        font-size: rem(18px);
+    }
 }
 
 .intro__btn {

@@ -24,22 +24,23 @@
     width: 100%;
 
     @include tablets {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
 .slider__img {
     width: 50%;
-     @include tablets {
-    width: 85%;
+
+    @include tablets {
+        width: 85%;
     }
 }
 
 .slider__icon {
     @include phones {
-    width: 95%;
+        width: 95%;
     }
 }
 
@@ -47,31 +48,33 @@
     width: 50%;
 
     @include tablets {
-    width: 85%;
+        width: 85%;
     }
 
     @include phones {
-    width: 95%;
+        width: 100%;
     }
 }
 
 .slider__title {
-    font-style: 'alegreya_sansbold';
+    font-family: 'alegreya_sansbold';
     font-size: rem(36px);
     color: $black;
 
     @include tablets {
-    font-size: rem(54px);
-    font-weight: bold;
+        font-size: rem(54px);
+        font-weight: bold;
     }
 
     @include phones {
-    font-size: rem(33px);
+        line-height: 1.1;
+        font-size: 25px;
+        margin-bottom: 10px;
     }
 }
 
 .slider__caption {
-    font-style: 'alegreya_sans_mediumregular';
+    font-family: 'alegreya_sans_mediumregular';
     font-size: rem(24px);
     color: $text-grey-l;
 }
@@ -80,8 +83,9 @@
     font-style: 'alegreya_sansregular';
     font-size: rem(18px);
     color: $text-grey-2;
+
     @include phones {
-    font-size: rem(16px);
+        font-size: rem(16px);
     }
 }
 
@@ -104,8 +108,8 @@
     font-size: rem(60px);
     color: $black;
 
-     @include tablets {
-    font-size: rem(52px);
+    @include tablets {
+        font-size: rem(52px);
     }
 }
 
@@ -119,12 +123,12 @@
     padding: rem(10px) rem(15px);
     text-align: center;
 
-     @include tablets {
+    @include tablets {
         padding: rem(10px) rem(30px);
     }
 
     @include phones {
-     z-index: 7;
+        z-index: 7;
     }
 }
 
@@ -133,8 +137,8 @@
     flex-wrap: wrap;
 
     @include tablets {
-    justify-content: center;
-    text-align: left;
+        justify-content: center;
+        text-align: left;
     }
 
 
@@ -147,8 +151,8 @@
     align-items: center;
 
     @include tablets {
-    width: 100%;
-    justify-content: space-around;
+        width: 100%;
+        justify-content: space-around;
     }
 }
 
@@ -157,8 +161,8 @@
     display: flex;
     flex-direction: column;
 
-      @include phones {
-     z-index: 7;
+    @include phones {
+        z-index: 7;
     }
 }
 

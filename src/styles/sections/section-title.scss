@@ -24,8 +24,10 @@
     }
 
     @include phones {
-        margin-top: 1%;
-        font-size: rem(36px);
+        text-align: center;
+        width: 100%;
+        font-size: rem(32px);
+        margin-bottom: rem(10px);
     }
 }
 

@@ -20,6 +20,10 @@ task("copy:html", () => {
   return src('src/*.html').pipe(dest('dist'))
 });
 
+task("copy:js", () => {
+  return src('src/js/*.js').pipe(dest('dist/js'))
+});
+
 
 task("styles", () => {
   return src("src/styles/main.scss")
@@ -28,4 +32,4 @@ task("styles", () => {
     .pipe(dest("dist"));
 });
 
-task("default", series("clean", "copy:html", "styles"))
+task("default", series("clean", "copy:html", "copy:js", "styles"))

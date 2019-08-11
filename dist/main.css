@@ -623,7 +623,7 @@ table {
       margin-bottom: 1.25rem; } }
   @media screen and (max-width: 480px) {
     .advanteges__items {
-      margin-bottom: 0.625rem; } }
+      margin-bottom: 0.3125rem; } }
 
 .advanteges__img {
   background-color: #f2f5f4;
@@ -636,8 +636,8 @@ table {
   height: 8.75rem; }
   @media screen and (max-width: 480px) {
     .advanteges__img {
-      width: 6.25rem;
-      height: 6.25rem; } }
+      width: 5rem;
+      height: 5rem; } }
 
 .advanteges__icon {
   width: 4.6875rem;
@@ -654,7 +654,8 @@ table {
       margin-bottom: 0.625rem; } }
   @media screen and (max-width: 480px) {
     .advanteges__title {
-      font-size: 1.125rem; } }
+      font-size: 1.125rem;
+      margin: 0; } }
 
 .advanteges__desc {
   font-family: 'alegreya_sans_lightregular';
@@ -668,7 +669,7 @@ table {
   @media screen and (max-width: 480px) {
     .advanteges__desc {
       font-size: 1rem;
-      width: 65%; } }
+      width: 70%; } }
 
 .first {
   background: url("../img/bc/first.jpg") no-repeat;
@@ -1207,6 +1208,11 @@ table {
       width: 60%;
       margin: 1.25rem auto;
       font-size: 1.25rem; } }
+  @media screen and (max-width: 480px) {
+    .intro__desc {
+      width: 75%;
+      margin: 0.9375rem auto;
+      font-size: 1.125rem; } }
 
 .intro__btn {
   font-family: 'alegreya_sans_extraboldRg';
@@ -1432,8 +1438,10 @@ table {
       font-size: 3.25rem; } }
   @media screen and (max-width: 480px) {
     .black {
-      margin-top: 1%;
-      font-size: 2.25rem; } }
+      text-align: center;
+      width: 100%;
+      font-size: 2rem;
+      margin-bottom: 0.625rem; } }
 
 .review-black {
   text-align: center;
@@ -1512,10 +1520,10 @@ table {
       width: 85%; } }
   @media screen and (max-width: 480px) {
     .slider__desc {
-      width: 95%; } }
+      width: 100%; } }
 
 .slider__title {
-  font-style: 'alegreya_sansbold';
+  font-family: 'alegreya_sansbold';
   font-size: 2.25rem;
   color: #2f3234; }
   @media screen and (max-width: 768px) {
@@ -1524,10 +1532,12 @@ table {
       font-weight: bold; } }
   @media screen and (max-width: 480px) {
     .slider__title {
-      font-size: 2.0625rem; } }
+      line-height: 1.1;
+      font-size: 25px;
+      margin-bottom: 10px; } }
 
 .slider__caption {
-  font-style: 'alegreya_sans_mediumregular';
+  font-family: 'alegreya_sans_mediumregular';
   font-size: 1.5rem;
   color: #707070; }
 
@@ -1656,6 +1666,9 @@ table {
   @media screen and (max-width: 768px) {
     .why {
       margin: 0 auto; } }
+  @media screen and (max-width: 480px) {
+    .why {
+      width: 95%; } }
 
 .why__list {
   display: flex;
@@ -1668,6 +1681,10 @@ table {
     .why__list {
       justify-content: center;
       margin-left: 0; } }
+  @media screen and (max-width: 480px) {
+    .why__list {
+      font-size: 0.875rem;
+      line-height: 1; } }
 
 .why__item {
   display: flex;
@@ -1683,6 +1700,9 @@ table {
   @media screen and (max-width: 768px) {
     .whychocco__desc {
       width: 60%; } }
+  @media screen and (max-width: 480px) {
+    .whychocco__desc {
+      width: 75%; } }
 
 .work__pleyer {
   width: 37.5rem;

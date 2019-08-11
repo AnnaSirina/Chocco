@@ -4,6 +4,10 @@
     text-align: center;
 
     @include tablets {
-    	width: 60%;
+        width: 60%;
+    }
+
+    @include phones {
+        width: 75%;
     }
 }
