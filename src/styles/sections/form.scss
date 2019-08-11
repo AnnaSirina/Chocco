@@ -267,6 +267,10 @@
     @include tablets {
         padding: rem(20px) rem(30px);
     }
+
+    @include phones {
+        padding: rem(15px) rem(20px);
+    }
 }
 
 .order__btn-reset {

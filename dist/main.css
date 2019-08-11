@@ -636,12 +636,16 @@ table {
   height: 8.75rem; }
   @media screen and (max-width: 480px) {
     .advanteges__img {
-      width: 5rem;
-      height: 5rem; } }
+      width: 4.375rem;
+      height: 4.375rem; } }
 
 .advanteges__icon {
   width: 4.6875rem;
   height: 4.6875rem; }
+  @media screen and (max-width: 480px) {
+    .advanteges__icon {
+      width: 4.0625rem;
+      height: 4.0625rem; } }
 
 .advanteges__title {
   font-family: 'alegreya_sansbold';
@@ -654,7 +658,7 @@ table {
       margin-bottom: 0.625rem; } }
   @media screen and (max-width: 480px) {
     .advanteges__title {
-      font-size: 1.125rem;
+      font-size: 1rem;
       margin: 0; } }
 
 .advanteges__desc {
@@ -668,8 +672,8 @@ table {
       width: 60%; } }
   @media screen and (max-width: 480px) {
     .advanteges__desc {
-      font-size: 1rem;
-      width: 80%; } }
+      font-size: 0.875rem;
+      width: 90%; } }
 
 .first {
   background: url("../img/bc/first.jpg") no-repeat;
@@ -1169,6 +1173,9 @@ table {
   @media screen and (max-width: 768px) {
     .order__btn-submit {
       padding: 1.25rem 1.875rem; } }
+  @media screen and (max-width: 480px) {
+    .order__btn-submit {
+      padding: 0.9375rem 1.25rem; } }
 
 .order__btn-reset {
   padding-left: 0;
@@ -1575,7 +1582,7 @@ table {
   @media screen and (max-width: 480px) {
     .slider__consist {
       font-size: 1rem;
-      margin-top: 0.3125rem; } }
+      margin-top: 0.125rem; } }
 
 .slider__kkal,
 .slider__gr {
@@ -1596,6 +1603,9 @@ table {
   @media screen and (max-width: 768px) {
     .slider__price-nbr {
       font-size: 3rem; } }
+  @media screen and (max-width: 480px) {
+    .slider__price-nbr {
+      font-size: 1.75rem; } }
 
 .slider__btn {
   font-style: 'alegreya-sans-extrabolditalic';
@@ -1611,7 +1621,8 @@ table {
       padding: 0.625rem 1.875rem; } }
   @media screen and (max-width: 480px) {
     .slider__btn {
-      z-index: 7; } }
+      z-index: 7;
+      font-size: 1rem; } }
 
 .slider__fat {
   display: flex;
@@ -1630,6 +1641,9 @@ table {
     .slider__price {
       width: 100%;
       justify-content: space-around; } }
+  @media screen and (max-width: 480px) {
+    .slider__price {
+      justify-content: space-evenly; } }
 
 .slider__calorie,
 .slider__weight {
@@ -1730,7 +1744,8 @@ table {
       width: 60%; } }
   @media screen and (max-width: 480px) {
     .whychocco__desc {
-      width: 75%; } }
+      width: 85%;
+      font-size: 0.875rem; } }
 
 .work__pleyer {
   width: 37.5rem;

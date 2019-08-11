@@ -40,14 +40,19 @@
     height: rem(140px);
 
     @include phones {
-        width: rem(80px);
-        height: rem(80px);
+        width: rem(70px);
+        height: rem(70px);
     }
 }
 
 .advanteges__icon {
     width: rem(75px);
     height: rem(75px);
+
+    @include phones {
+        width: rem(65px);
+        height: rem(65px);
+    }
 }
 
 .advanteges__title {
@@ -62,7 +67,7 @@
     }
 
     @include phones {
-        font-size: rem(18px);
+        font-size: rem(16px);
         margin: 0;
     }
 }
@@ -79,7 +84,7 @@
     }
 
     @include phones {
-        font-size: rem(16px);
-        width: 80%;
+        font-size: rem(14px);
+        width: 90%;
     }
 }

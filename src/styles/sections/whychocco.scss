@@ -8,6 +8,7 @@
     }
 
     @include phones {
-        width: 75%;
+        width: 85%;
+        font-size: rem(14px);
     }
 }
