@@ -11,9 +11,9 @@
     }
 
     @include phones {
-        width: 100%;
+        width: 95%;
         padding: 3%;
-        margin-top: rem(10px);
+        margin-top: rem(5px);
     }
 }
 
@@ -35,6 +35,11 @@
     font-size: rem(18px);
     margin-right: rem(20px);
 
+    @include phones {
+        font-size: rem(16px);
+        margin-right: rem(10px);
+    }
+
 }
 
 .order__input {
@@ -54,20 +59,31 @@
 .order__button {
     margin-top: rem(20px);
 
+    @include phones {
+        margin-top: rem(10px);
+    }
 
 }
 
 .order__pay,
 .order__callback,
 .order__button {
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: rem(20px);
+
+    @include phones {
+        padding: rem(10px);
+    }
 }
 
 .order__input-textarea {
     height: rem(180px);
     resize: none;
     font-size: rem(14px);
+
+    @include phones {
+        height: rem(150px);
+    }
 }
 
 .order__input:focus {
@@ -77,6 +93,10 @@
 
 .order__street {
     margin-top: rem(30px);
+
+    @include phones {
+        margin-top: rem(10px);
+    }
 }
 
 .order__contact {
@@ -245,7 +265,7 @@
     border-radius: rem(25px);
 
     @include tablets {
-    padding: rem(20px) rem(30px);
+        padding: rem(20px) rem(30px);
     }
 }
 

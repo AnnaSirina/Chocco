@@ -1,24 +1,22 @@
-
-
 .review__list {
-    background: url('../img/leaves6.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: rem(50px);
-    margin-bottom: rem(30px);
+	background: url('../img/leaves6.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: rem(50px);
+	margin-bottom: rem(30px);
 
-    @include tablets {
-    background-position: 94%; 
-    max-width: 70%;
-    }
+	@include tablets {
+		background-position: 94%;
+		max-width: 70%;
+	}
 
-    @include phones {
-    background-position: 94%; 
-    max-width: 100%;
-    padding: 0;
-    margin-bottom: rem(10px);
-    }
+	@include phones {
+		background-position: 94%;
+		max-width: 100%;
+		padding: 0;
+		margin-bottom: rem(10px);
+	}
 }
 
 
@@ -27,8 +25,8 @@
 	justify-content: space-between;
 
 	@include tablets {
-	flex-direction: column;
-	text-align: center;
+		flex-direction: column;
+		text-align: center;
 
 	}
 }
@@ -36,12 +34,14 @@
 .review__item-hidden {
 	display: none;
 }
+
 .review__round {
 	@include tablets {
-	display: flex;
-	justify-content: center;
+		display: flex;
+		justify-content: center;
 	}
 }
+
 .review__roundList {
 	display: flex;
 	justify-content: space-between;
@@ -57,8 +57,8 @@
 	margin: rem(10px);
 
 	@include phones {
-	min-width: rem(100px);
-	min-height: rem(100px);
+		min-width: rem(100px);
+		min-height: rem(100px);
 	}
 }
 
@@ -70,7 +70,7 @@
 
 .customer2 {
 	background: url("../img/karina.jpg");
-	background-size: contain;	
+	background-size: contain;
 }
 
 .customer3 {
@@ -85,32 +85,35 @@
 	justify-content: space-around;
 	margin-left: rem(15px);
 
-	@include tablets { 
-	text-align: center;
-	margin-left: 0;
+	@include tablets {
+		text-align: center;
+		margin-left: 0;
 	}
 }
 
-.review__title,  {
+.review__title {
 	font-size: rem(20px);
 	color: grey;
 }
 
 .review__name {
+	font-weight: bold;
+
 	@include tablets {
-	margin-top: rem(20px);
+		margin-top: rem(20px);
 	}
 }
 
 
 .review__avatar {
 	@include phones {
-	width: 50%;
+		width: 40%;
 	}
 }
 
 .review__about {
 	@include phones {
-	padding: 0 rem(15px);
+		padding: 0 rem(15px);
+		font-size: rem(14px);
 	}
 }

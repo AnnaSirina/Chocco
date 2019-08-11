@@ -669,7 +669,7 @@ table {
   @media screen and (max-width: 480px) {
     .advanteges__desc {
       font-size: 1rem;
-      width: 70%; } }
+      width: 80%; } }
 
 .first {
   background: url("../img/bc/first.jpg") no-repeat;
@@ -885,7 +885,7 @@ table {
   position: absolute;
   bottom: 0;
   left: 0;
-  rigth: 0; }
+  right: 0; }
 
 .footer__data {
   width: 100%;
@@ -895,7 +895,7 @@ table {
     .footer__data {
       flex-direction: column;
       align-items: center;
-      padding: 0.625rem; } }
+      padding: 0.9375rem; } }
 
 .footer__list {
   display: flex; }
@@ -929,7 +929,7 @@ table {
   background-position: -35px -35px; }
 
 .footer__items:hover {
-  drop-shadow: 16px 16px 10px black; }
+  box-shadow: 16px 16px 10px black; }
 
 .footer__adres {
   font-size: 1.125rem; }
@@ -962,9 +962,9 @@ table {
       padding: 0 15%; } }
   @media screen and (max-width: 480px) {
     .order {
-      width: 100%;
+      width: 95%;
       padding: 3%;
-      margin-top: 0.625rem; } }
+      margin-top: 0.3125rem; } }
 
 .order__col1,
 .order__col2 {
@@ -982,6 +982,10 @@ table {
   font-family: 'ubuntu-light';
   font-size: 1.125rem;
   margin-right: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .order__label {
+      font-size: 1rem;
+      margin-right: 0.625rem; } }
 
 .order__input {
   margin-top: 0.625rem;
@@ -998,17 +1002,31 @@ table {
 .order__callback,
 .order__button {
   margin-top: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .order__list,
+    .order__pay,
+    .order__callback,
+    .order__button {
+      margin-top: 0.625rem; } }
 
 .order__pay,
 .order__callback,
 .order__button {
   margin: 0 auto;
   padding: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .order__pay,
+    .order__callback,
+    .order__button {
+      padding: 0.625rem; } }
 
 .order__input-textarea {
   height: 11.25rem;
   resize: none;
   font-size: 0.875rem; }
+  @media screen and (max-width: 480px) {
+    .order__input-textarea {
+      height: 9.375rem; } }
 
 .order__input:focus {
   border: 2px solid #f9b43b;
@@ -1016,6 +1034,9 @@ table {
 
 .order__street {
   margin-top: 1.875rem; }
+  @media screen and (max-width: 480px) {
+    .order__street {
+      margin-top: 0.625rem; } }
 
 .order__contact {
   display: flex;
@@ -1383,17 +1404,20 @@ table {
   font-size: 1.25rem;
   color: grey; }
 
-@media screen and (max-width: 768px) {
-  .review__name {
-    margin-top: 1.25rem; } }
+.review__name {
+  font-weight: bold; }
+  @media screen and (max-width: 768px) {
+    .review__name {
+      margin-top: 1.25rem; } }
 
 @media screen and (max-width: 480px) {
   .review__avatar {
-    width: 50%; } }
+    width: 40%; } }
 
 @media screen and (max-width: 480px) {
   .review__about {
-    padding: 0 0.9375rem; } }
+    padding: 0 0.9375rem;
+    font-size: 0.875rem; } }
 
 .round {
   display: flex;
@@ -1441,7 +1465,8 @@ table {
       text-align: center;
       width: 100%;
       font-size: 2rem;
-      margin-bottom: 0.625rem; } }
+      margin-bottom: 0.625rem;
+      margin-top: 0.625rem; } }
 
 .review-black {
   text-align: center;
@@ -1449,8 +1474,9 @@ table {
   margin-bottom: 1.5625rem; }
   @media screen and (max-width: 480px) {
     .review-black {
-      font-size: 2.25rem;
-      z-index: 7; } }
+      font-size: 2.125rem;
+      z-index: 7;
+      margin-top: 0.625rem; } }
 
 .black-team {
   margin-bottom: 7%;
@@ -1471,7 +1497,8 @@ table {
       font-weight: bold; } }
   @media screen and (max-width: 480px) {
     .title-green {
-      font-size: 2rem; } }
+      font-size: 1.875rem;
+      margin-top: 0.3125rem; } }
 
 .menu-acc {
   margin: 3.125rem; }
@@ -1534,7 +1561,7 @@ table {
     .slider__title {
       line-height: 1.1;
       font-size: 25px;
-      margin-bottom: 10px; } }
+      margin-bottom: 0.3125rem; } }
 
 .slider__caption {
   font-family: 'alegreya_sans_mediumregular';
@@ -1542,12 +1569,13 @@ table {
   color: #707070; }
 
 .slider__consist {
-  font-style: 'alegreya_sansregular';
+  font-family: 'alegreya_sansregular';
   font-size: 1.125rem;
   color: #b4b5b4; }
   @media screen and (max-width: 480px) {
     .slider__consist {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      margin-top: 0.3125rem; } }
 
 .slider__kkal,
 .slider__gr {
@@ -1567,7 +1595,7 @@ table {
   color: #2f3234; }
   @media screen and (max-width: 768px) {
     .slider__price-nbr {
-      font-size: 3.25rem; } }
+      font-size: 3rem; } }
 
 .slider__btn {
   font-style: 'alegreya-sans-extrabolditalic';

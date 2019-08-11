@@ -1,23 +1,24 @@
 .footer {
- width: 100%;
- position: absolute;
- bottom:0;
- left: 0;
- rigth: 0;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 
 .footer__data {
 	width: 100%;
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 
-    @include phones {
-    flex-direction: column;
-    align-items: center;
-    padding: rem(10px);
-    }
+	@include phones {
+		flex-direction: column;
+		align-items: center;
+		padding: rem(15px);
+	}
 }
+
 .footer__list {
 	display: flex;
 }
@@ -26,21 +27,21 @@
 	margin-right: rem(20px);
 	width: rem(20px);
 	height: rem(20px);
-	position: relative;	
-	transition: 0.3s;  
+	position: relative;
+	transition: 0.3s;
 }
 
 .footer__items:after {
 	content: "";
-    display: block; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: url('../img/icons/icons_sprite.png');
-    width: 20px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: url('../img/icons/icons_sprite.png');
+	width: 20px;
 	height: 20px;
-    background-position: -5px -5px;
+	background-position: -5px -5px;
 }
 
 .footer__items:nth-child(2):after {
@@ -48,7 +49,7 @@
 }
 
 .footer__items:nth-child(3):after {
-	 background-position: -5px -35px;
+	background-position: -5px -35px;
 }
 
 .footer__items:nth-child(4):after {
@@ -56,14 +57,14 @@
 }
 
 .footer__items:hover {
-  drop-shadow: (16px 16px 10px black);
+	box-shadow: (16px 16px 10px black);
 }
 
 .footer__adres {
 	font-size: rem(18px);
 
 	@include phones {
-	margin-bottom: rem(15px);
+		margin-bottom: rem(15px);
 	}
 }
 
@@ -72,14 +73,14 @@
 	display: flex;
 
 	@include phones {
-	justify-content: center;
+		justify-content: center;
 	}
 }
 
 .footer__tel {
 	color: $green;
+
 	@include phones {
-	margin-bottom: rem(15px);
+		margin-bottom: rem(15px);
 	}
 }
-
