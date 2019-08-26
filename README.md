@@ -5,8 +5,7 @@ Adaptive layout.
 ## How to run
 
 Copy the directory.
-To show the structure of my work i left src folder. The main build is in dist folder.
-If it will be more convenient there is a ready link in the topic of repository.
+// To show the preview of my project i left dist folder. So you can use the link in the topic.
 
 ### \$ npm run gulp
 
@@ -17,7 +16,6 @@ If it will be more convenient there is a ready link in the topic of repository.
 ## Как запустить
 
 Скопируйте директорию.
-Чтобы показать структуру моей работы я оставила папку src. Конечный билд в папке dist.
-Если так будет более удобно, есть готовая ссылка в заголовке репозитория.
+// Чтобы показать итоговый вид проекта я оставила папку dist. Можно воспользоваться ссылкой в заголовке.
 
 ### \$ npm run gulp

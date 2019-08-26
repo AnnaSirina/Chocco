@@ -1,29 +1,53 @@
-.sprite {
+. {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-fb {
+.-fb {
     width: 20px;
     height: 20px;
     background-position: -5px -5px;
 }
 
-.sprite-inst {
+.-fbgrey {
     width: 20px;
     height: 20px;
     background-position: -35px -5px;
 }
 
-.sprite-twitter {
+.-inst {
     width: 20px;
-    height: 16px;
-    background-position: -5px -35px;
+    height: 20px;
+    background-position: -65px -5px;
 }
 
-.sprite-vk {
+.-instblack {
+    width: 20px;
+    height: 20px;
+    background-position: -95px -5px;
+}
+
+.-twitter {
+    width: 20px;
+    height: 16px;
+    background-position: -125px -5px;
+}
+
+.-twitterblack {
+    width: 20px;
+    height: 16px;
+    background-position: -155px -5px;
+}
+
+.-vk {
     width: 23px;
     height: 13px;
-    background-position: -35px -35px;
+    background-position: -185px -5px;
+}
+
+.-vkblack {
+    width: 23px;
+    height: 13px;
+    background-position: -218px -5px;
 }
