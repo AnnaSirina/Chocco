@@ -73,7 +73,7 @@
 	font-size: rem(18px);
 
 	@include phones {
-		margin-bottom: rem(15px);
+		margin-bottom: rem(5px);
 	}
 }
 
@@ -90,6 +90,6 @@
 	color: $green;
 
 	@include phones {
-		margin-bottom: rem(15px);
+		margin-bottom: rem(5px);
 	}
 }

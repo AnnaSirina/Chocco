@@ -757,12 +757,9 @@ table {
   background: url("../img/bc/fouth.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
-  -moz-background-size: 100%;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  position: relative; }
+  justify-content: space-between; }
 
 .review {
   position: relative;
@@ -944,7 +941,7 @@ table {
   font-size: 1.125rem; }
   @media screen and (max-width: 480px) {
     .footer__adres {
-      margin-bottom: 0.9375rem; } }
+      margin-bottom: 0.3125rem; } }
 
 .footer__contacts {
   margin: 0;
@@ -957,7 +954,7 @@ table {
   color: #0f5a47; }
   @media screen and (max-width: 480px) {
     .footer__tel {
-      margin-bottom: 0.9375rem; } }
+      margin-bottom: 0.3125rem; } }
 
 .order {
   display: flex;
@@ -1016,7 +1013,7 @@ table {
     .order__pay,
     .order__callback,
     .order__button {
-      margin-top: 0.625rem; } }
+      margin-top: 0.3125rem; } }
 
 .order__pay,
 .order__callback,
