@@ -1,5 +1,31 @@
 //base layout
-@import "../styles/base/*.scss";
+@import "../styles/base/mixins.scss";
+@import "../styles/base/normalize.scss";
+@import "../styles/base/onepage-scroll.scss";
+@import "../styles/base/variables.scss";
+@import "../styles/base/fonts.scss";
+@import "../styles/base/layout.scss";
+
 
 //block for sections 
-@import "../styles/sections/*.scss";
+@import "../styles/sections/accordeon-menu.scss";
+@import "../styles/sections/advanteges.scss";
+@import "../styles/sections/background.scss";
+@import "../styles/sections/contacts.scss";
+@import "../styles/sections/footer.scss";
+@import "../styles/sections/form.scss";
+@import "../styles/sections/icons.scss";
+@import "../styles/sections/intro.scss";
+@import "../styles/sections/logo.scss";
+@import "../styles/sections/menu.scss";
+@import "../styles/sections/menu_link.scss";
+@import "../styles/sections/player.scss";
+@import "../styles/sections/review.scss";
+@import "../styles/sections/round.scss";
+@import "../styles/sections/section-title.scss";
+@import "../styles/sections/slider.scss";
+@import "../styles/sections/team.scss";
+@import "../styles/sections/why.scss";
+@import "../styles/sections/whychocco.scss";
+@import "../styles/sections/work.scss";
+

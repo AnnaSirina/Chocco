@@ -5,18 +5,12 @@
     height: rem(420px);
     margin-top: rem(30px);
 
-    @include tablets {
-        width: rem(680px);
-        height: rem(440px);
-
-    }
-
-    @include phones {
-        width: rem(400px);
-        height: rem(260px);
-    }
-
+@include phones {
+     width: 95%;
+    height: rem(375px);
 }
+}
+
 
 .player__splash {
     content: "";
@@ -30,10 +24,7 @@
 }
 
 .player__wrapper {
-    @include phones {
-        width: rem(400px);
-        height: rem(260px);
-    }
+   
 
     &.active .player__splash {
         display: none;
@@ -45,8 +36,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 35px;
+    height: rem(35px);
     background: #3e3e3e;
+
+    @include phones {
+
+    }
 }
 
 .player__start {
@@ -95,6 +90,10 @@
     background: #626262;
     top: 15px;
     left: rem(50px);
+
+    @include phones {
+     width: rem(220px);
+    }
 }
 
 .player__playback-button {
@@ -116,4 +115,12 @@
     right: rem(20px);
     color: #626262;
     font-weight: bold;
+}
+
+.yt-player {
+    
+    @include phones {
+    width: 60%;
+    height: auto;
+    }
 }
