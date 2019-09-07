@@ -9,12 +9,12 @@ function init() {
             behaviors: ['drag']
         }),
 
-         myPlacemark = new ymaps.Placemark([55.751999, 37.576133], {
+        myPlacemark = new ymaps.Placemark([55.751999, 37.576133], {
             hintContent: 'Мы всегда Вам рады!',
             balloonContent: 'ул.Новый Арбат д.31/12'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: './img/marker.png',
+            iconImageHref: '../img/marker.png',
             iconImageSize: [46, 57],
             iconImageOffset: [-23, -104],
 
@@ -28,7 +28,7 @@ function init() {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: './img/marker.png',
+            iconImageHref: '../img/marker.png',
             // Размеры метки.
             iconImageSize: [46, 57],
             // Смещение левого верхнего угла иконки относительно
@@ -39,7 +39,7 @@ function init() {
         })
 
 
-     myMap.geoObjects.add(myPlacemark)
+    myMap.geoObjects.add(myPlacemark)
         .add(myPlacemark2)
-        
+
 }
