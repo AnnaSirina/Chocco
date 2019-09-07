@@ -1,4 +1,4 @@
-.team {
+#team {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -31,7 +31,6 @@
 }
 .low {
 	margin-top: 5%;
-
 	@include tablets {
 	margin: 0;
 	}
@@ -46,13 +45,12 @@
 .team__title::before {
 	content: '\25BC';
 	color: grey; 
+	margin-right: rem(2px);
 }
 
 .team__desc {
 	font-size: rem(16px);
 	font-color: grey;
-}
-
-.team__desc-hidden {
 	display: none;
 }
+

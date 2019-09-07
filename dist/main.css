@@ -564,8 +564,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.accordeon-menu__list {
-  display: flex;
+.block-list {
   position: absolute;
   display: flex;
   height: 100%;
@@ -573,31 +572,45 @@ table {
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 0; }
+  padding: 0;
+  z-index: 5; }
 
-.accordeon-menu__item {
-  display: flex;
+.block-list__item {
   display: inherit;
   width: 4.375rem;
   padding: 0;
   margin: 0;
-  background: rgba(47, 50, 52, 0.5); }
+  background: rgba(47, 50, 52, 0.6);
+  cursor: pointer; }
 
-.accordeon-menu__desc {
-  font-size: 1.125rem;
-  color: white;
-  padding: 0.9375rem; }
+.block-list__item.active {
+  width: auto; }
 
-.accordeon-menu__title {
-  font-size: 2.5rem;
-  color: white;
-  font-weight: bold;
-  writing-mode: tb-rl;
+.block-list__title {
+  writing-mode: vertical-lr;
   transform: rotate(180deg);
-  padding: 0.9375rem; }
+  padding: 1.5625rem 0.8125rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.1875rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0;
+  font-family: 'gagalin';
+  text-transform: uppercase; }
 
-.accordeon-menu__desc-hidden {
+.block-list__desc {
+  background: rgba(47, 50, 52, 0.7);
+  font-size: 0.875rem;
+  color: #fff;
+  font-family: 'ubuntu-light';
+  padding: 0.625rem;
+  width: 0;
   display: none; }
+
+.block-list__item.active .block-list__desc {
+  width: 28.125rem;
+  display: block; }
 
 .advanteges__list {
   display: flex;
@@ -1295,26 +1308,6 @@ table {
     .menu__logo {
       font-size: 2rem; } }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  width: 100%; }
-
-.menu__block {
-  color: #fff;
-  margin-top: 1.25rem;
-  width: 80%; }
-  @media screen and (max-width: 768px) {
-    .menu__block {
-      display: none; } }
-
-.menu__list {
-  display: flex;
-  justify-content: space-around;
-  font-family: 'alegreya-regular';
-  font-size: 1.125rem; }
-
 .menu-link {
   vertical-align: middle;
   position: relative;
@@ -1342,6 +1335,26 @@ table {
 
 .menu-link__bars:after {
   bottom: 0; }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%; }
+
+.menu__block {
+  color: #fff;
+  margin-top: 1.25rem;
+  width: 80%; }
+  @media screen and (max-width: 768px) {
+    .menu__block {
+      display: none; } }
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'alegreya-regular';
+  font-size: 1.125rem; }
 
 .player {
   position: relative;
@@ -1557,7 +1570,8 @@ table {
   font-family: 'alegreya-regular';
   font-size: 3.75rem;
   text-transform: uppercase;
-  margin: 0; }
+  margin: 0;
+  z-index: 3; }
   @media screen and (max-width: 480px) {
     .section-title {
       font-size: 1.625rem;
@@ -1632,11 +1646,12 @@ table {
   display: flex;
   justify-content: center;
   margin: 0 1.875rem;
-  margin-top: 10%; }
+  margin-top: 10%;
+  max-width: 90%; }
 
 .slider__item {
   display: flex;
-  width: 100%; }
+  width: 90%; }
   @media screen and (max-width: 768px) {
     .slider__item {
       flex-direction: column;
@@ -1692,18 +1707,18 @@ table {
 
 .slider__kkal,
 .slider__gr {
-  font-style: 'alegreya_sansregular';
+  font-family: 'alegreya_sansregular';
   font-size: 1.125rem;
   color: #b4b5b4; }
 
 .slider__number {
-  font-style: 'alegreya_sansbold';
+  font-family: 'alegreya_sansbold';
   font-size: 1.125rem;
   font-weight: bold;
   color: #333333; }
 
 .slider__price-nbr {
-  font-style: 'alegreya_sans_lightregular';
+  font-family: 'alegreya_sans_lightregular';
   font-size: 3.75rem;
   color: #2f3234; }
   @media screen and (max-width: 768px) {
@@ -1714,7 +1729,7 @@ table {
       font-size: 1.75rem; } }
 
 .slider__btn {
-  font-style: 'alegreya-sans-extrabolditalic';
+  font-family: 'alegreya-sans-extrabolditalic';
   font-size: 1.1875rem;
   color: #fff;
   background-color: #0f5a47;
@@ -1729,6 +1744,10 @@ table {
     .slider__btn {
       z-index: 7;
       font-size: 1rem; } }
+
+.slider__btn:hover {
+  background-color: #acbeb8;
+  color: #0f5a47; }
 
 .slider__fat {
   display: flex;
@@ -1763,12 +1782,12 @@ table {
 .slider__weight {
   margin-left: 1.25rem; }
 
-.team {
+#team {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
   @media screen and (max-width: 768px) {
-    .team {
+    #team {
       justify-content: center; } }
 
 .team__item {
@@ -1800,13 +1819,12 @@ table {
 
 .team__title::before {
   content: '\25BC';
-  color: grey; }
+  color: grey;
+  margin-right: 0.125rem; }
 
 .team__desc {
   font-size: 1rem;
-  font-color: grey; }
-
-.team__desc-hidden {
+  font-color: grey;
   display: none; }
 
 .why {

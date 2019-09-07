@@ -17,11 +17,12 @@
     justify-content: center;
     margin: 0 rem(30px);
     margin-top: 10%;
+    max-width: 90%;
 }
 
 .slider__item {
     display: flex;
-    width: 100%;
+    width: 90%;
 
     @include tablets {
         flex-direction: column;
@@ -92,20 +93,20 @@
 
 .slider__kkal,
 .slider__gr {
-    font-style: 'alegreya_sansregular';
+    font-family: 'alegreya_sansregular';
     font-size: rem(18px);
     color: $text-grey-2;
 }
 
 .slider__number {
-    font-style: 'alegreya_sansbold';
+    font-family: 'alegreya_sansbold';
     font-size: rem(18px);
     font-weight: bold;
     color: $text-grey-3;
 }
 
 .slider__price-nbr {
-    font-style: 'alegreya_sans_lightregular';
+    font-family: 'alegreya_sans_lightregular';
     font-size: rem(60px);
     color: $black;
 
@@ -119,7 +120,7 @@
 }
 
 .slider__btn {
-    font-style: 'alegreya-sans-extrabolditalic';
+    font-family: 'alegreya-sans-extrabolditalic';
     font-size: rem(19px);
     color: $white;
     background-color: $green;
@@ -136,6 +137,11 @@
         z-index: 7;
         font-size: rem(16px);
     }
+}
+
+.slider__btn:hover {
+    background-color: $blue;
+    color: $green;
 }
 
 .slider__fat {
